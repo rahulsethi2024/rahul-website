@@ -10,6 +10,19 @@
   <h1>Welcome to Rahul Sethi's website - !!</h1>
    <h3>Testing in progress!!</h3>
 
+      <p>Today's date is: <span id="currentDate"></span></p>
+
+  <script>
+    // Get the current date
+    const today = new Date();
+    
+    // Format the date (e.g., YYYY-MM-DD)
+    const formattedDate = today.toISOString().split('T')[0];
+
+    // Display the date on the page
+    document.getElementById('currentDate').textContent = formattedDate;
+  </script> 
+      
 <!-- Elfsight Visitor Counter | Untitled Visitor Counter -->
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-b9ce8f0e-11de-441d-b699-a8aa0c833adc" data-elfsight-app-lazy></div>
